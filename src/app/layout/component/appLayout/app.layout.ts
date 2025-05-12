@@ -12,6 +12,7 @@ import { AppFooter } from '../appFooter/app.footer';
     standalone: true,
     imports: [CommonModule, AppTopbar, AppSidebar, RouterModule, AppFooter],
     templateUrl: './appLayout.html',
+    styleUrls: ['../../../../assets/layout/layout.scss'],
 })
 export class AppLayout {
 

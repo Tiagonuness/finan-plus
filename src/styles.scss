@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also use other style files */
+@use "tailwindcss";
+@use 'primeicons/primeicons.css';
+@use './assets/layout/_core.scss';
+@use './assets/layout/_footer.scss';
+@use './assets/layout/_main.scss';
+@use './assets/layout/_menu.scss';
+@use './assets/layout/_mixins.scss';
+@use './assets/layout/_preloading.scss';
+@use './assets/layout/_responsive.scss';
+@use './assets/layout/_topbar.scss';
+@use './assets/layout/_typography.scss';
+@use './assets/layout/_utils.scss';
+@use './assets/layout/layout.scss';
+@use './assets/layout/variables/_common.scss';
+@use './assets/layout/variables/_dark.scss';
+@use './assets/layout/variables/_light.scss';
+@use './assets/demo/code.scss';
+@use './assets/demo/demo.scss';
+@use './assets/demo/flags/flags.scss';
