@@ -6,9 +6,9 @@ export const routes: Routes = [
     {
         path: '',
         component: AppLayout,
-        // children: [
-        //     { path: '', component: Dashboard }
-        // ]
+        children: [
+            { path: '', component: Dashboard }
+        ]
     },
     // { path: 'landing', component: Landing },
     // { path: 'notfound', component: Notfound },
