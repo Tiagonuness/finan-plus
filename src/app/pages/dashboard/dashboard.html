@@ -1,11 +1,15 @@
-<div class="grid grid-cols-12 gap-8 card">
-    <app-stats-dashboard class="contents" />
-    <div class="col-span-12 xl:col-span-6">
-        <app-recent-transactions />
+<p-iftalabel class="w-full md:w-56 mb-4">
+    <p-select [(ngModel)]="selectedMes" inputId="dd-mes" [options]="mes" optionLabel="name" styleClass="w-full" />
+    <label for="dd-city">Mês</label>
+</p-iftalabel>
+<div class="grid grid-cols-12 gap-8">
+    <app-stats-dashboard class="contents card" />
+    <div class="col-span-12 xl:col-span-6 card">
+        <!-- <app-recent-transactions /> -->
         <!-- <app-best-selling-widget /> -->
     </div>
     <div class="col-span-12 xl:col-span-6">
-        <!-- <app-revenue-stream-widget /> -->
+        <app-revenue-stream-widget />
         <!-- <app-notifications-widget /> -->
     </div>
 </div>
