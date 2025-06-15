@@ -1,15 +1,35 @@
-<p-iftalabel class="w-full md:w-56 mb-4">
-    <p-select [(ngModel)]="selectedMes" inputId="dd-mes" [options]="mes" optionLabel="name" styleClass="w-full" />
-    <label for="dd-city">Mês</label>
-</p-iftalabel>
+<h3 class="text-xl font-semibold text-gray-800">Dashboard</h3>
+<div class="flex justify-between items-center mb-4 grid grid-cols-8 gap-4">
+    <p-selectbutton 
+        [options]="['Hoje', 'Semana', 'Mês', 'Ano']" 
+        [(ngModel)]="selectedOption" 
+        class="col-span-2 w-full">
+    </p-selectbutton>
+
+    <p-floatlabel class="w-full col-span-6">
+        <p-datepicker 
+            [(ngModel)]="date" 
+            selectionMode="range"
+            [iconDisplay]="'input'" 
+            [showIcon]="true" 
+            inputId="over_label"
+            dateFormat="dd/mm/yy"
+        />
+        <label for="over_label">Selecione um intervalo</label>
+    </p-floatlabel>
+</div>
 <div class="grid grid-cols-12 gap-8">
     <app-stats-dashboard class="contents card" />
+    <app-grafico-gasto-mensal class="col-span-8" />
+    <div class="w-full border border-surface rounded-2xl py-5 px-7 flex flex-row justify-between col-span-12 xl:col-span-4">
+        <app-recent-transactions />
+    </div>
+    <div class="col-span-12 xl:col-span-6">
+        <!-- <app-grafico-tipo-gasto /> -->
+        <!-- <app-notifications-widget /> -->
+    </div>
     <div class="col-span-12 xl:col-span-6 card">
         <!-- <app-recent-transactions /> -->
         <!-- <app-best-selling-widget /> -->
-    </div>
-    <div class="col-span-12 xl:col-span-6">
-        <app-revenue-stream-widget />
-        <!-- <app-notifications-widget /> -->
     </div>
 </div>

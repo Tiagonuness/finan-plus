@@ -12,9 +12,9 @@
     transition:
         transform var(--layout-section-transition-duration),
         left var(--layout-section-transition-duration);
-    background-color: var(--surface-overlay);
+    background-color: var(--surface-ground);
     border-radius: var(--content-border-radius);
-    padding: 0.5rem 1.5rem;
+    // padding: 0.5rem 1.5rem;
 }
 
 .layout-menu {
@@ -58,6 +58,8 @@
         margin: 0;
         padding: 0;
         list-style-type: none;
+        background-color: white;
+        border-radius: 10px;
 
         a {
             display: flex;

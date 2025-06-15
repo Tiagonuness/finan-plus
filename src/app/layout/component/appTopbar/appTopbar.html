@@ -8,6 +8,12 @@
         </a>
     </div>
 
+    <div class="text-sm mb-1 sm:ml-0 ml-6 mt-4">
+        <span class="text-gray-400">Pages</span>
+        <span class="mx-1">/</span>
+        <span class="font-medium">{{ sectionTitle }}</span>
+    </div>
+
     <div class="layout-topbar-actions">
         <div class="layout-config-menu">
             <button type="button" class="layout-topbar-action" (click)="toggleDarkMode()">
@@ -15,9 +21,23 @@
             </button>
         </div>
 
-        <button class="layout-topbar-menu-button layout-topbar-action" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-scalein" leaveToClass="hidden" leaveActiveClass="animate-fadeout" [hideOnOutsideClick]="true">
-            <i class="pi pi-ellipsis-v"></i>
-        </button>
+        <div class="layout-topbar-menu hidden lg:block">
+            <div class="layout-topbar-menu-content">
+                <button type="button" class="layout-topbar-action">
+                    <i class="pi pi-cog"></i>
+                    <span>Configuração</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="layout-topbar-menu hidden lg:block">
+            <div class="layout-topbar-menu-content">
+                <button type="button" class="layout-topbar-action">
+                    <i class="pi pi-bell"></i>
+                    <span>Notificações</span>
+                </button>
+            </div>
+        </div>
 
         <div class="layout-topbar-menu hidden lg:block">
             <div class="layout-topbar-menu-content">

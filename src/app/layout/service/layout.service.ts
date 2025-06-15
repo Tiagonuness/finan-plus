@@ -122,9 +122,9 @@ export class LayoutService {
     toggleDarkMode(config?: layoutConfig): void {
         const _config = config || this.layoutConfig();
         if (_config.darkTheme) {
-            document.documentElement.classList.add('app-dark');
+            document.documentElement.classList.add('app-dark', 'dark');
         } else {
-            document.documentElement.classList.remove('app-dark');
+            document.documentElement.classList.remove('app-dark', 'dark');
         }
     }
 

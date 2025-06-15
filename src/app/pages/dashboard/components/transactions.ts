@@ -9,7 +9,7 @@ import { Product, ProductService } from '../../service/product.service';
     standalone: true,
     selector: 'app-recent-transactions',
     imports: [CommonModule, TableModule, ButtonModule, RippleModule],
-    template: `<div class="!mb-8 border-t var(--surface-border)">
+    template: `<div class="!mb-8 var(--surface-border)">
         <div class="font-semibold text-xl mb-4">Transações</div>
         <p-table [value]="products" [paginator]="true" [rows]="10" responsiveLayout="scroll">
             <ng-template #header>

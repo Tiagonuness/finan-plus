@@ -5,14 +5,14 @@ import { LayoutService } from '../../../layout/service/layout.service';
 
 @Component({
     standalone: true,
-    selector: 'app-revenue-stream-widget',
+    selector: 'app-grafico-tipo-gasto',
     imports: [ChartModule],
     template: `<div class="card !mb-8">
         <div class="font-semibold text-xl mb-4">Formas de agamento</div>
         <p-chart type="bar" [data]="chartData" [options]="chartOptions" class="h-80" />
     </div>`
 })
-export class RevenueStreamWidget {
+export class GraficoTipoGasto {
     chartData: any;
 
     chartOptions: any;
