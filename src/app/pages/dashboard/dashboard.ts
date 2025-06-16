@@ -23,6 +23,7 @@ interface Meses {
         SelectModule, SelectButtonModule, DatePickerModule,
         FloatLabelModule, GraficoGastoMensalComponent],
     templateUrl: './dashboard.html',
+    standalone: true,
 })
 export class Dashboard implements OnInit {
     selectedMes: Meses | undefined;
