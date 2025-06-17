@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NotificationsWidget } from './components/notificationswidget';
 import { StatsDashboard } from './components/statsdashboard';
-import { Transactions } from './components/transactions';
+import { TypeExpense } from './components/transactions';
 import { BestSellingWidget } from './components/bestsellingwidget';
 import { GraficoTipoGasto } from './components/graficotipogasto';
 import { SelectModule } from 'primeng/select';
@@ -18,7 +18,7 @@ interface Meses {
 }
 @Component({
     selector: 'app-dashboard',
-    imports: [StatsDashboard, Transactions, BestSellingWidget, 
+    imports: [StatsDashboard, TypeExpense, BestSellingWidget, 
         GraficoTipoGasto, NotificationsWidget, FormsModule, 
         SelectModule, SelectButtonModule, DatePickerModule,
         FloatLabelModule, GraficoGastoMensalComponent],

@@ -27,3 +27,15 @@
 .dark .backgroundColorGraph {
   background-color: #18181b;
 }
+
+.dark .darkTableTypeExpense {
+  background-color: #18181b;
+
+  tr:hover {
+    background-color: #27272a;
+  }
+
+  .textTypeExpense {
+    color: #FFF;
+  }
+}

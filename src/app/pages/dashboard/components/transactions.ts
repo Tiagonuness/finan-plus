@@ -7,32 +7,12 @@ import { Product, ProductService } from '../../service/product.service';
 
 @Component({
     standalone: true,
-    selector: 'app-recent-transactions',
+    selector: 'app-typeof-expense',
     imports: [CommonModule, TableModule, ButtonModule, RippleModule],
-    template: `<div class="!mb-8 var(--surface-border)">
-        <div class="font-semibold text-xl mb-4">Transações</div>
-        <p-table [value]="products" [paginator]="true" [rows]="10" responsiveLayout="scroll">
-            <ng-template #header>
-                <tr>
-                    <th class="font-bold">Categoria</th>
-                    <th class="font-bold" pSortableColumn="price">Valor <p-sortIcon field="price"></p-sortIcon></th>
-                    <th class="font-semibold">Detalhe</th>
-                </tr>
-            </ng-template>
-            <ng-template #body let-product>
-                <tr>
-                    <td style="width: 35%; min-width: 7rem;">{{ product.name }}</td>
-                    <td style="width: 35%; min-width: 8rem;">{{ product.price | currency: 'BRL' }}</td>
-                    <td style="width: 15%;">
-                        <button pButton pRipple type="button" icon="pi pi-search" class="p-button p-component p-button-text p-button-icon-only"></button>
-                    </td>
-                </tr>
-            </ng-template>
-        </p-table>
-    </div>`,
+    templateUrl: './html/typeofExpense.html',
     providers: [ProductService]
 })
-export class Transactions {
+export class TypeExpense {
     products!: Product[];
 
     constructor(private productService: ProductService) {}
