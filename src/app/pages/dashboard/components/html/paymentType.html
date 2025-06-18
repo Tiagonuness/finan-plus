@@ -1,0 +1,42 @@
+<div class="flex flex-col gap-4 p-4 bg-white border rounded-xl border-transparent drop-shadow-lg backgroundColorGraph">
+    <h3 class="card-title text-xl font-semibold text-gray-800">Formas de Pagamento</h3>
+    <div class="flex flex-row justify-between items-start gap-4 w-full">
+    
+        <!-- Gráfico -->
+        <div id="chartdivGraphPaymentType" style="width: 100%; height: 500px;"></div>
+
+        <!-- Legenda custom -->
+        <div class="flex flex-col justify-between gap-4 p-3 bg-gray-50 rounded-xl shadow-sm w-2/5 darkPaymentType h-60">
+            <div class="flex justify-between items-center text-sm text-black font-medium">
+                <div class="flex items-center gap-2">
+                <i class="pi pi-money-bill text-lg text-green-600 mr-2"></i>
+                <span>Dinheiro</span>
+                </div>
+                <span class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px]">R$5.000,00</span>
+            </div>
+
+            <div class="flex justify-between items-center text-sm text-black font-medium">
+                <div class="flex items-center gap-2">
+                <i class="pi pi-credit-card text-lg text-green-600 mr-2"></i>
+                <span>Cartão</span>
+                </div>
+                <span class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px]">R$2.500,00</span>
+            </div>
+
+            <div class="flex justify-between items-center text-sm text-black font-medium">
+                <div class="flex items-center gap-2">
+                <i class="pi pi-calendar text-lg text-green-600 mr-2"></i>
+                <span>Boleto</span>
+                </div>
+                <span class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px]">R$2.500,00</span>
+            </div>
+
+            <div class="bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-300 to-transparent z-0"></div>
+
+            <div class="flex justify-between items-center font-semibold text-base text-black">
+                <span>Total</span>
+                <span class="whitespace-nowrap overflow-hidden text-ellipsis max-w-[100px]">R$10.000,00</span>
+            </div>
+        </div>
+    </div>
+</div>

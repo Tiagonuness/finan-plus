@@ -12,7 +12,7 @@ import { Product, ProductService } from '../../service/product.service';
     templateUrl: './html/typeofExpense.html',
     providers: [ProductService]
 })
-export class TypeExpense {
+export class ExpenseType {
     products!: Product[];
 
     constructor(private productService: ProductService) {}

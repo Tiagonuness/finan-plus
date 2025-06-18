@@ -28,14 +28,26 @@
   background-color: #18181b;
 }
 
-.dark .darkTableTypeExpense {
+.dark .darkTableExpenseType {
   background-color: #18181b;
 
   tr:hover {
     background-color: #27272a;
   }
 
-  .textTypeExpense {
+  .textExpenseType {
     color: #FFF;
   }
+}
+
+.dark .darkPaymentType {
+  background-color: #1e1e22;
+
+  span {
+    color: #FFF;
+  }
+}
+
+.dark .darkBackgroundExpenseCategories {
+    background-color: #18181b;
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NotificationsWidget } from './components/notificationswidget';
 import { StatsDashboard } from './components/statsdashboard';
-import { TypeExpense } from './components/transactions';
+import { ExpenseType } from './components/transactions';
 import { BestSellingWidget } from './components/bestsellingwidget';
 import { GraficoTipoGasto } from './components/graficotipogasto';
 import { SelectModule } from 'primeng/select';
@@ -11,6 +11,8 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { PrimeNG } from 'primeng/config';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { GraficoGastoMensalComponent } from './components/graphicMonthlyExpense';
+import { GraphMonthPaymentTypes } from './components/graphPaymentType';
+import { GraphExpenseCategories } from './components/graphExpenseCategories';
 
 interface Meses {
     name: string;
@@ -18,10 +20,11 @@ interface Meses {
 }
 @Component({
     selector: 'app-dashboard',
-    imports: [StatsDashboard, TypeExpense, BestSellingWidget, 
+    imports: [StatsDashboard, ExpenseType, BestSellingWidget, 
         GraficoTipoGasto, NotificationsWidget, FormsModule, 
         SelectModule, SelectButtonModule, DatePickerModule,
-        FloatLabelModule, GraficoGastoMensalComponent],
+        FloatLabelModule, GraficoGastoMensalComponent, GraphMonthPaymentTypes,
+        GraphExpenseCategories],
     templateUrl: './dashboard.html',
     standalone: true,
 })
